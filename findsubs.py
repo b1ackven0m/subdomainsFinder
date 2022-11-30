@@ -21,7 +21,7 @@ def defualt_domains():
     for subdomain in lista:
         r = requests.get("http://"+str(subdomain)+"."+base_url)
         if(r.status_code == 200 ):
-            print(subdomain + " exists on the site !!" + " , status_code = "+ str(r.status_code))
+            print(subdomain + " exists on the site !!" )
         else:
             print(subdomain + " does not exists on the site :) ")
 
